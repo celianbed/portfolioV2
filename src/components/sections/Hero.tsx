@@ -150,11 +150,11 @@ export default function Hero() {
                                     </p>
                                     <p className="pl-3">
                                         <span className="text-[var(--color-accent)]">&quot;mobile&quot;</span>:{" "}
-                                        <span className="text-[var(--color-muted)]">&quot;Kotlin, Android&quot;</span>,
+                                        <span className="text-[var(--color-muted)]">&quot;Flutter, Kotlin, Android&quot;</span>,
                                     </p>
                                     <p className="pl-3">
                                         <span className="text-[var(--color-accent)]">&quot;db&quot;</span>:{" "}
-                                        <span className="text-[var(--color-muted)]">&quot;MySQL, Oracle, SQL Server&quot;</span>
+                                        <span className="text-[var(--color-muted)]">&quot;Postgre SQL, MySQL, Oracle, SQL Server&quot;</span>
                                     </p>
                                     <p>{`}`}</p>
                                 </div>
