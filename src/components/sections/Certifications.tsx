@@ -8,9 +8,9 @@ export default function Certifications() {
         <section id="certifications" className="py-28 px-6 lg:pl-64">
             <div className="max-w-5xl">
                 <FadeIn>
-                    <span className="section-label">04 — Parcours</span>
+                    <span className="section-label">04 - Certifications</span>
                     <h2 className="text-4xl md:text-5xl font-bold text-[var(--color-foreground)] mt-3 mb-12">
-                        Certifications &amp; Formations
+                        Certifications
                     </h2>
                 </FadeIn>
 

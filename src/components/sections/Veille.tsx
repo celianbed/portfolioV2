@@ -8,7 +8,7 @@ export default function Veille() {
         <section id="veille" className="py-28 px-6 lg:pl-64">
             <div className="max-w-5xl">
                 <FadeIn>
-                    <span className="section-label">05 — Veille</span>
+                    <span className="section-label">05 - Veille</span>
                     <h2 className="text-4xl md:text-5xl font-bold text-[var(--color-foreground)] mt-3 mb-4">
                         Veille Technologique
                     </h2>

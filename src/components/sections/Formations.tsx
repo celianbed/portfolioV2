@@ -5,10 +5,10 @@ import FadeIn from "@/src/components/FadeIn";
 
 export default function Formations() {
     return (
-        <section id="bts" className="py-28 px-6 lg:pl-64">
+        <section id="parcours" className="py-28 px-6 lg:pl-64">
             <div className="max-w-5xl">
                 <FadeIn>
-                    <span className="section-label">Formation</span>
+                    <span className="section-label">Formations & expériences</span>
                     <h2 className="text-4xl md:text-5xl font-bold text-[var(--color-foreground)] mt-3 mb-4">
                         Mon Parcours
                     </h2>
@@ -39,7 +39,7 @@ export default function Formations() {
                                     <div className="bg-[var(--color-surface)] border border-[var(--color-border)] rounded-xl p-8 relative overflow-hidden group hover:border-[var(--color-accent)]/30 transition-colors duration-300">
                                         {/* Background decoration */}
                                         <div className="absolute -top-4 -right-4 text-[5rem] font-black text-[var(--color-foreground)]/[0.02] leading-none select-none group-hover:text-[var(--color-accent)]/[0.05] transition-colors duration-500">
-                                            {item.status === "current" ? "NOW" : i === 1 ? "DEC" : "BTS"}
+                                            {item.badge}
                                         </div>
 
                                         {/* Header */}
@@ -56,13 +56,18 @@ export default function Formations() {
                                                             Terminé
                                                         </span>
                                                     )}
+                                                    <span className="inline-block px-2.5 py-0.5 bg-[var(--color-surface-2)] text-[var(--color-muted)] text-[0.6rem] font-bold uppercase tracking-wider rounded-md border border-[var(--color-border)]">
+                                                        {item.type === "experience" ? "Expérience" : "Formation"}
+                                                    </span>
                                                 </div>
                                                 <h3 className="text-lg font-bold text-[var(--color-foreground)]">
                                                     {item.title}
                                                 </h3>
-                                                <p className="text-sm text-[var(--color-accent)] font-medium">
-                                                    {item.school}
-                                                </p>
+                                                {item.school && (
+                                                    <p className="text-sm text-[var(--color-accent)] font-medium">
+                                                        {item.school}
+                                                    </p>
+                                                )}
                                             </div>
                                             <div className="text-right shrink-0">
                                                 <p className="text-xs text-[var(--color-muted)] font-mono">

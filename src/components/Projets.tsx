@@ -29,7 +29,7 @@ function ScreenshotCarousel({ screenshots, title }: { screenshots: string[]; tit
           <motion.img
             key={current}
             src={screenshots[current]}
-            alt={`${title} — capture ${current + 1}`}
+            alt={`${title} - capture ${current + 1}`}
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -30 }}
@@ -122,7 +122,7 @@ export default function Projets() {
   return (
     <section id="projets" className="py-28 px-6 lg:pl-64">
       <div className="max-w-5xl">
-        <span className="section-label">03 — Réalisations</span>
+        <span className="section-label">03 - Réalisations</span>
         <h2 className="text-4xl md:text-5xl font-bold text-[var(--color-foreground)] mt-3 mb-4">
           Projets & Stages
         </h2>
@@ -271,7 +271,7 @@ export default function Projets() {
                     ))}
                   </ul>
                 </div>
-                {/* Technologies — inline SVG logos */}
+                {/* Technologies, logos SVG inline */}
                 <div>
                   <h4 className="text-xs font-mono uppercase tracking-widest text-[var(--color-muted)] mb-3">
                     Technologies
@@ -289,7 +289,7 @@ export default function Projets() {
                   </div>
                 </div>
 
-                {/* Screenshots — Carousel */}
+                {/* Captures d'écran, carousel */}
                 {"screenshots" in selected && selected.screenshots && (selected.screenshots as string[]).length > 0 && (
                   <div>
                     <h4 className="text-xs font-mono uppercase tracking-widest text-[var(--color-muted)] mb-3">

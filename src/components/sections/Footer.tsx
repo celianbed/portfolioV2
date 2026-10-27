@@ -13,7 +13,7 @@ export default function Footer() {
                             <span className="text-[var(--color-accent)]">.</span>
                         </p>
                         <p className="text-[var(--color-muted)] text-xs mt-1">
-                            Fait main — {new Date().getFullYear()}
+                            Fait main - {new Date().getFullYear()}
                         </p>
                     </div>
                     <div className="flex gap-6 text-sm items-center">

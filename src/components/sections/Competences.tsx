@@ -10,7 +10,7 @@ export default function Competences() {
         <section id="competences" className="py-28 px-6 lg:pl-64">
             <div className="max-w-5xl">
                 <FadeIn>
-                    <span className="section-label">02 — Savoir-faire</span>
+                    <span className="section-label">02 - Savoir-faire</span>
                     <h2 className="text-4xl md:text-5xl font-bold text-[var(--color-foreground)] mt-3 mb-12">
                         Compétences
                     </h2>

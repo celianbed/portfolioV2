@@ -8,7 +8,7 @@ export default function Profil() {
         <section id="profil" className="py-28 px-6 lg:pl-64">
             <div className="max-w-5xl">
                 <FadeIn>
-                    <span className="section-label">01 — À propos</span>
+                    <span className="section-label">01 - À propos</span>
                     <h2 className="text-4xl md:text-5xl font-bold text-[var(--color-foreground)] mt-3 mb-8">
                         Mon Profil
                     </h2>

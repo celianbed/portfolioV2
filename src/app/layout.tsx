@@ -9,9 +9,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Célian Bedminster — Portfolio",
-  description: "Développeur Full-Stack & Étudiant en DEC Informatique au Canada. Découvrez mes projets, compétences et parcours.",
-  icons: { icon: "/assets/img/logo.ico" },
+  title: "Célian Bedminster - Portfolio",
+  description: "Développeur back-end et automatisation, en Master en alternance chez Bull et auto-entrepreneur. Mes projets, mes compétences et mon parcours.",
+  icons: { icon: "/assets/img/favicon.ico" },
 };
 
 export default function RootLayout({

@@ -6,9 +6,9 @@ import TypingAnimation from "@/src/components/TypingAnimation";
 import CountUp from "@/src/components/CountUp";
 
 const STATS = [
-    { value: 10, suffix: "+", label: "Projets" },
-    { value: 2, suffix: "", label: "Stages" },
-    { value: 5, suffix: "", label: "Certifications" },
+    { value: 11, suffix: "", label: "Projets" },
+    { value: 5, suffix: "", label: "Expériences" },
+    { value: 8, suffix: "", label: "Certifications" },
 ] as const;
 
 export default function Hero() {
@@ -30,7 +30,7 @@ export default function Hero() {
 
             <div className="max-w-6xl w-full pt-24 lg:pt-0 relative z-10">
                 <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-12 lg:gap-16">
-                    {/* Left column — text */}
+                    {/* Colonne gauche, texte */}
                     <div className="flex-1 max-w-2xl">
                         <motion.div
                             initial={{ opacity: 0, y: 30 }}
@@ -51,11 +51,12 @@ export default function Hero() {
                                 <TypingAnimation className="text-[var(--color-accent)] font-semibold" />
                             </div>
                             <p className="text-sm md:text-base text-[var(--color-muted)] max-w-lg mb-10 leading-relaxed">
-                                {personalInfo.tagline} — Passionné par le développement,
-                                l&apos;entrepreneuriat et la conception de solutions innovantes.
+                                {personalInfo.tagline}. J&apos;automatise des infrastructures de
+                                calcul haute performance chez Bull et je développe des applications
+                                Flutter et Python à mon compte.
                             </p>
 
-                            {/* Quick stats — animated */}
+                            {/* Stats animées */}
                             <motion.div
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
@@ -109,7 +110,7 @@ export default function Hero() {
                         </motion.div>
                     </div>
 
-                    {/* Right column — interactive terminal card */}
+                    {/* Colonne droite, carte terminal */}
                     <motion.div
                         initial={{ opacity: 0, x: 40, scale: 0.95 }}
                         animate={{ opacity: 1, x: 0, scale: 1 }}
@@ -141,20 +142,20 @@ export default function Hero() {
                                 <div className="text-[var(--color-foreground)] pl-2 border-l-2 border-[var(--color-accent)]/30">
                                     <p>{`{`}</p>
                                     <p className="pl-3">
+                                        <span className="text-[var(--color-accent)]">&quot;back&quot;</span>:{" "}
+                                        <span className="text-[var(--color-muted)]">&quot;Python, Flask, Java, Spring&quot;</span>,
+                                    </p>
+                                    <p className="pl-3">
                                         <span className="text-[var(--color-accent)]">&quot;web&quot;</span>:{" "}
                                         <span className="text-[var(--color-muted)]">&quot;Next.js, Angular, PHP&quot;</span>,
                                     </p>
                                     <p className="pl-3">
-                                        <span className="text-[var(--color-accent)]">&quot;back&quot;</span>:{" "}
-                                        <span className="text-[var(--color-muted)]">&quot;Java, Spring, C#&quot;</span>,
-                                    </p>
-                                    <p className="pl-3">
                                         <span className="text-[var(--color-accent)]">&quot;mobile&quot;</span>:{" "}
-                                        <span className="text-[var(--color-muted)]">&quot;Flutter, Kotlin, Android&quot;</span>,
+                                        <span className="text-[var(--color-muted)]">&quot;Flutter, Kotlin&quot;</span>,
                                     </p>
                                     <p className="pl-3">
-                                        <span className="text-[var(--color-accent)]">&quot;db&quot;</span>:{" "}
-                                        <span className="text-[var(--color-muted)]">&quot;Postgre SQL, MySQL, Oracle, SQL Server&quot;</span>
+                                        <span className="text-[var(--color-accent)]">&quot;ops&quot;</span>:{" "}
+                                        <span className="text-[var(--color-muted)]">&quot;Linux, PostgreSQL, Docker&quot;</span>
                                     </p>
                                     <p>{`}`}</p>
                                 </div>
@@ -163,7 +164,7 @@ export default function Hero() {
                                     <span className="text-[var(--color-accent)]">$</span>{" "}
                                     <span className="text-[var(--color-muted)]">echo $LOCATION</span>
                                 </p>
-                                <p className="text-[var(--color-foreground)]">📍 Paris & Montréal</p>
+                                <p className="text-[var(--color-foreground)]">📍 Bois d&apos;Arcy, Île-de-France</p>
 
                                 <p className="mt-3">
                                     <span className="text-[var(--color-accent)]">$</span>{" "}
@@ -181,7 +182,7 @@ export default function Hero() {
                 </div>
             </div>
 
-            {/* Scroll indicator — clickable button */}
+            {/* Indicateur de scroll cliquable */}
             <motion.button
                 onClick={() => {
                     const el = document.getElementById("profil");
